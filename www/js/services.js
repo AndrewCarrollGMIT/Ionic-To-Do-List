@@ -19,9 +19,9 @@ angular.module('starter.services', [])
 
     // Function to call Extra Task
     function addTask3(title3) {
-    data.tasks.push({title3:, added: new Date()});
+    data.tasks.push({title3: title3});
  }
-  //
+  
   return {
     data: data
     , addTask: addTask
