@@ -1,0 +1,39 @@
+<ion-view  view-title= "Create Task">
+ 
+     <!-- Background Colour-->
+	<ion-content style="background-color:#B0C4DE;">
+       
+		<!-- Header Layout -->
+        <h3><P><center><b><font color="white">Create Task</font></b></center></P></h3>
+     
+            <div class="list">
+     
+        <label class="item item-input item-stacked-label">
+          <span class="input-label"></span>
+           
+			<!-- Enter Task Here -->
+			<input type="text" ng-model="data.newTask"  placeholder="Click here to begin writing a task">
+                </label>
+
+				<!--http://www.tutorialspoint.com/ionic/ionic_buttons.htm  Link Helped to change background colour and Button Type-->
+
+                    <button class="button button-positive  button-full" ng-click="addTask()">
+                Work-Tasks
+            </button>
+        
+				<!--http://www.tutorialspoint.com/ionic/ionic_buttons.htm  Link Helped to change background colour and Button Type-->
+            <button class="button button-assertive   button-full" ng-click="addTask2()">
+                   Home-Tasks
+                    </button> 
+				<!--http://www.tutorialspoint.com/ionic/ionic_buttons.htm  Link Helped to change background colour and Button Type-->
+                <button class="button  button-energized  button-full" ng-click="addTask3()">
+                 Extra-Tasks
+             </button>
+       
+			<!-- Backgroud Image Of NotePad http://www.w3schools.com/tags/tag_img.asp Link to help -->
+          <img src="img/notepad.png" align="right" style="width:128px;height:128px;">
+          
+    
+    </div>
+  </ion-content>
+</ion-view>
