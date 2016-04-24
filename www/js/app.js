@@ -13,21 +13,21 @@ angular
     templateUrl: 'templates/tabs.html'
   })
 
-  .state('tab.toDoList', {
-    url: '/toDoList',
+  .state('tab.TaskList', {
+    url: '/TaskList',
     views: {
-      'tab-toDoList': {
-        templateUrl: 'templates/tab-toDoList.html',
+      'tab-TaskList': {
+        templateUrl: 'templates/tab-TaskList.html',
         controller: 'TasksCtrl'
       }
     }
   })
 
-  .state('tab.addedTasks', {
-    url: '/addedTasks',
+  .state('tab.createTask', {
+    url: '/createTask',
     views: {
-      'tab-addedTasks': {
-        templateUrl: 'templates/tab-addedTasks.html',
+      'tab-createTask': {
+        templateUrl: 'templates/tab-createTask.html',
         controller: 'AddTaskCtrl'
       }
     }
@@ -35,7 +35,7 @@ angular
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/toDoList');
+  $urlRouterProvider.otherwise('/tab/TaskList');
 
 });
 
